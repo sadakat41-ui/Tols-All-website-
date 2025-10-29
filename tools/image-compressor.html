@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor - All In One Tools</title>
+    <meta name="description" content="Free online image compressor. Reduce the file size of your JPG and PNG images quickly without losing quality.">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        #image-compressor-form .form-group { margin-bottom: 20px; }
+        #image-input {
+            width: 100%; padding: 12px;
+            border: 1px dashed var(--border-color);
+            background: var(--bg-color);
+            border-radius: 5px;
+        }
+        #quality-slider { width: 100%; }
+        #compression-result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            border-radius: 5px;
+        }
+        #download-btn { display: none; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html">AllTools</a></div>
+            <ul class="nav-menu"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul>
+            <div class="header-right">
+                <div class="language-switcher"><select id="lang-select"><option value="en">English</option><option value="hi">Hindi</option><option value="ur">Urdu</option></select></div>
+                <button class="theme-switcher" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container tool-page-container">
+        <div class="tool-main">
+            <div class="tool-wrapper">
+                <h1>Image Compressor</h1>
+                <form id="image-compressor-form">
+                    <div class="form-group">
+                        <label for="image-input">Select Image (JPG or PNG):</label>
+                        <input type="file" id="image-input" accept="image/jpeg, image/png" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quality-slider">Quality (0=Low, 100=High): <span id="quality-value">80</span></label>
+                        <input type="range" id="quality-slider" min="0" max="100" value="80">
+                    </div>
+                    <button type="submit" class="btn">Compress Image</button>
+                </form>
+                
+                <div id="compression-result">
+                    <p>Select an image and click "Compress" to see the result.</p>
+                </div>
+                <a href="#" id="download-btn" class="btn">Download Compressed Image</a>
+
+                <div class="ad-placeholder ad-in-tool">
+                    In-Tool Ad (e.g., 468x60)
+                </div>
+            </div>
+
+            <div class="tool-description">
+                <h2>About This Image Compressor</h2>
+                <p>This tool compresses your JPG and PNG images right in your browser. No files are uploaded to any server; your privacy is 100% protected. Use the slider to control the compression quality.</p>
+            </div>
+        </div>
+
+        <aside class="tool-sidebar">
+            <div class="ad-placeholder ad-sidebar">
+                Sidebar Ad (e.g., 300x600)
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.1/dist/browser-image-compression.js"></script>
+    <script src="../js/tools.js"></script>
+</body>
+</html>
