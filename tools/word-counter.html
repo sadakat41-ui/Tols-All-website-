@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter - All In One Tools</title>
+    <meta name="description" content="Free online word and character counter. Paste your text to instantly count words, characters, sentences, and paragraphs.">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        #wordCounterTextarea {
+            width: 100%;
+            min-height: 250px;
+            padding: 15px;
+            font-family: var(--font-family);
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .stat-box {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .stat-box h4 { font-size: 1.5rem; color: var(--primary-color); margin: 0; }
+        .stat-box p { font-size: 0.9rem; margin: 0; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html">AllTools</a></div>
+            <ul class="nav-menu"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul>
+            <div class="header-right">
+                <div class="language-switcher"><select id="lang-select"><option value="en">English</option><option value="hi">Hindi</option><option value="ur">Urdu</option></select></div>
+                <button class="theme-switcher" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container tool-page-container">
+        <div class="tool-main">
+            <div class="tool-wrapper">
+                <h1>Word Counter</h1>
+                <p>Paste your text below to get instant counts.</p>
+                <textarea id="wordCounterTextarea" placeholder="Start typing or paste your text here..."></textarea>
+                
+                <div class="stats-grid">
+                    <div class="stat-box"><h4 id="word-count">0</h4><p>Words</p></div>
+                    <div class="stat-box"><h4 id="char-count">0</h4><p>Characters</p></div>
+                    <div class="stat-box"><h4 id="char-count-no-space">0</h4><p>Chars (no spaces)</p></div>
+                    <div class="stat-box"><h4 id="sentence-count">0</h4><p>Sentences</p></div>
+                    <div class="stat-box"><h4 id="paragraph-count">0</h4><p>Paragraphs</p></div>
+                </div>
+
+                <div class="ad-placeholder ad-in-tool">
+                    In-Tool Ad (e.g., 468x60)
+                </div>
+            </div>
+
+            <div class="tool-description">
+                <h2>About This Word Counter</h2>
+                <p>Our Word Counter is a simple and fast tool to count words, characters, sentences, and paragraphs in your text. It's perfect for students, writers, bloggers, and professionals who need to meet specific length requirements.</p>
+            </div>
+        </div>
+
+        <aside class="tool-sidebar">
+            <div class="ad-placeholder ad-sidebar">
+                Sidebar Ad (e.g., 300x600)
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tools.js"></script>
+</body>
+</html>
