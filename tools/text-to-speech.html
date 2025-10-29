@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech (TTS) - All In One Tools</title>
+    <meta name="description" content="Free online Text to Speech (TTS) converter. Convert any text into natural-sounding audio with a variety of voices and languages.">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        #tts-text {
+            width: 100%;
+            min-height: 200px;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--font-color);
+            margin-bottom: 15px;
+        }
+        #tts-voice {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--font-color);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html">AllTools</a></div>
+            <ul class="nav-menu"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul>
+            <div class="header-right">
+                <div class="language-switcher"><select id="lang-select"><option value="en">English</option><option value="hi">Hindi</option><option value="ur">Urdu</option></select></div>
+                <button class="theme-switcher" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container tool-page-container">
+        <div class="tool-main">
+            <div class="tool-wrapper">
+                <h1>Text to Speech Converter</h1>
+                
+                <label for="tts-text">Enter your text:</label>
+                <textarea id="tts-text" placeholder="Type or paste your text here..."></textarea>
+                
+                <label for="tts-voice">Select Voice:</label>
+                <select id="tts-voice"></select>
+                
+                <button id="tts-button" class="btn">
+                    <i class="fa-solid fa-play"></i> Speak
+                </button>
+
+                <div class="ad-placeholder ad-in-tool">
+                    In-Tool Ad (e.g., 468x60)
+                </div>
+            </div>
+
+            <div class="tool-description">
+                <h2>About This Text to Speech Tool</h2>
+                <p>This tool uses your browser's built-in speech synthesis engine to convert text into spoken audio. The available voices depend on your browser (Chrome, Firefox, Edge, Safari) and your operating system (Windows, macOS, Android, etc.).</p>
+                <p>Simply type your text, choose a voice from the list, and click "Speak".</p>
+            </div>
+        </div>
+
+        <aside class="tool-sidebar">
+            <div class="ad-placeholder ad-sidebar">
+                Sidebar Ad (e.g., 300x600)
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tools.js"></script>
+</body>
+</html>
